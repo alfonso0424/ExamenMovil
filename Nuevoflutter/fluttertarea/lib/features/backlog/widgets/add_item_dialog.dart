@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AddItemDialog extends StatefulWidget {
   final Function(String, String) onAdd;
 
-  const AddItemDialog({required this.onAdd});
+  AddItemDialog({required this.onAdd});
 
   @override
   State<AddItemDialog> createState() => _AddItemDialogState();
@@ -30,18 +30,18 @@ class _AddItemDialogState extends State<AddItemDialog> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: const Text('Agregar nuevo ítem'),
+      title: Text('Agregar nuevo ítem'),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           TextField(
             controller: _titleController,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               hintText: 'Título del ítem',
               border: OutlineInputBorder(),
             ),
           ),
-          const SizedBox(height: 16),
+          SizedBox(height: 16),
           DropdownButton<String>(
             value: _selectedCategory,
             isExpanded: true,
@@ -62,7 +62,7 @@ class _AddItemDialogState extends State<AddItemDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.pop(context),
-          child: const Text('Cancelar'),
+          child: Text('Cancelar'),
         ),
         TextButton(
           onPressed: () {
@@ -71,7 +71,7 @@ class _AddItemDialogState extends State<AddItemDialog> {
               Navigator.pop(context);
             }
           },
-          child: const Text('Agregar'),
+          child: Text('Agregar'),
         ),
       ],
     );
