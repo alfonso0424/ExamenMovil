@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero de pasos: 0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumar paso"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/btnCero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar a cero"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/btnDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir al detalle"
+        android:textSize="18sp"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardAgua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_agua"
+                app:tint="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="Tomar agua"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cbAgua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@drawable/selector_check"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_ejercicio"
+                app:tint="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="Hacer ejercicio"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cbEjercicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@drawable/selector_check"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardEstudiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_estudiar"
+                app:tint="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="Estudiar"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cbEstudiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@drawable/selector_check"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
